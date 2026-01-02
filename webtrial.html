@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooking Blog - Jollof Rice</title>
+    <style>
+        /* GENERAL STYLING */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0e6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: #d63333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd1a3;
+        }
+
+        /* HEADER */
+        header h1 {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        /* SECTIONS */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #b32d00;
+            border-bottom: 2px solid #ffd1a3;
+            padding-bottom: 5px;
+        }
+
+        /* LISTS */
+        ul, ol {
+            margin-left: 40px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* IMAGE */
+        img {
+            display: block;
+            max-width: 400px;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 12px;
+            border: 2px solid #ffd1a3;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #d63333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #a52828;
+        }
+
+        /* Section backgrounds */
+        .ingredients, .instructions {
+            background-color: #fff5e6;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div>🍚 Cooking Blog</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#recipe">Recipe</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="container">
+        <header>
+            <h1>Welcome to My Cooking Blog!</h1>
+        </header>
+        <p>Discover delicious recipes, tips, and tricks to cook like a chef. Start with our featured recipe below!</p>
+        <a class="btn" href="#recipe">View Jollof Rice Recipe 🍚</a>
+    </section>
+
+    <!-- RECIPE SECTION -->
+    <section id="recipe" class="container">
+        <header>
+            <h1>School Jollof Rice Recipe</h1>
+        </header>
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>Rice</li>
+                <li>Maggi (anyone of your choice)</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Satchet Tomatoes</li>
+                <li>Vegetable oil / Palm Oil</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Boil your Rice</li>
+                <li>Within 12-15 minutes, sieve the rice and parboil it for about 10-15 minutes</li>
+                <li>Once your rice is parboiled, sieve it again and keep aside</li>
+                <li>On your gas to the lowest and put your pot on the fire</li>
+                <li>Pour a little groundnut oil in the pot, add your satchet tomatoes, maggi (to taste), salt, and pepper</li>
+                <li>Stir well for about a minute, then add water and stir</li>
+                <li>Then put in your rice and stir</li>
+                <li>Leave your rice to steam for about 5-7 minutes</li>
+                <li>Add any protein of your choice</li>
+                <li><strong>Your rice is ready</strong></li>
+            </ol>
+        </div>
+
+        <figure>
+            <img src="jollof rice.jpg" alt="Jollof rice with meat">
+            <figcaption>Your rice is ready</figcaption>
+        </figure>
+
+        <a class="btn" href="#" onclick="window.print()">Print Recipe 🖨️</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+        <header>
+            <h1>About This Blog</h1>
+        </header>
+        <p>This is a mini cooking blog made to showcase delicious recipes. You’ll find simple, step-by-step guides like our School Jollof Rice recipe. Perfect for beginners and food lovers alike! 🍴</p>
+    </section>
+</body>
+</html>
